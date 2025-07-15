@@ -1,0 +1,43 @@
+#include <iostream>
+
+class KalmanFilter{
+public:
+    KalmanFilter(float position_estimate, float uncertainty, float process_noise, 
+            float measurement_noise, bool verbose):
+        _position_estimate(position_estimate),
+        _uncertainty(uncertainty),
+        _process_noise(process_noise),
+        _measurement_noise(measurement_noise),
+        _verbose(verbose)
+        {}
+
+    void update(float measurement){
+        // Predict
+        _uncertainty = _uncertainty + _process_noise;
+
+        // Innovation covariance S_k = P_{k|k-1} + R
+        // how “big” we expect those residuals to be, on average
+        const float innovation_covariance = _uncertainty + _measurement_noise;
+
+        // Innovation (measurement residual)
+        const float innovation = measurement - _position_estimate;
+        
+        // Update
+        const float kalman_gain = _uncertainty / innovation_covariance;
+        _position_estimate = _position_estimate + kalman_gain * innovation;
+        _uncertainty = (1 - kalman_gain) * _uncertainty;
+    }
+
+    void report(){
+        std::cout << "Kalman:\n"
+            << "Position estimate: " << _position_estimate << "\n"
+            << "Uncertainty: " << _uncertainty << std::endl;
+    }
+
+private:
+    float _position_estimate;
+    float _uncertainty;
+    float _process_noise;
+    float _measurement_noise;
+    bool _verbose;
+};

@@ -1,5 +1,7 @@
-#include "./include/random.cpp"
 #include <iostream>
+#include "./include/random.cpp"
+#include "./include/kalman.cpp"
+
 
 // settings
 constexpr float position_estimate = 0; // What we believe about position now (starts at 0)
@@ -13,9 +15,12 @@ constexpr bool verbose = true;
 
 int main(){
     Random random;
+    KalmanFilter kalman(position_estimate, uncertainty, process_noise, measurement_noise, verbose); 
     for (int n_measurement = 0; n_measurement < n_measurements; n_measurement++){
         float measurement = random.get_normal(true_position, std::sqrt(measurement_noise));
-        std::cout << measurement << std::endl;
+        std::cout <<  "\nMeasurement #" << n_measurement << ": " << measurement << std::endl;
+        kalman.update(measurement);
+        kalman.report();
     }
     
     return 0;
