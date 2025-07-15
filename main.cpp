@@ -1,4 +1,4 @@
-// #include "./include/main.cpp"
+#include "./include/random.cpp"
 #include <iostream>
 
 // settings
@@ -12,6 +12,11 @@ constexpr bool verbose = true;
 
 
 int main(){
-    std::cout << "Test" << std::endl;
+    Random random;
+    for (int n_measurement = 0; n_measurement < n_measurements; n_measurement++){
+        float measurement = random.get_normal(true_position, std::sqrt(measurement_noise));
+        std::cout << measurement << std::endl;
+    }
+    
     return 0;
 }
