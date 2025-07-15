@@ -13,7 +13,7 @@ public:
 
     void update(float measurement){
         // Predict
-        _estimate_covariance = _estimate_covariance + _process_variance;
+        _estimate_covariance += _process_variance;
 
         // Innovation covariance S_k = P_{k|k-1} + R
         // how “big” we expect those residuals to be, on average
