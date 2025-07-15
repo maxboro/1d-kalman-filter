@@ -26,12 +26,21 @@ public:
         const float kalman_gain = _uncertainty / innovation_covariance;
         _position_estimate = _position_estimate + kalman_gain * innovation;
         _uncertainty = (1 - kalman_gain) * _uncertainty;
+
+        if (_verbose){
+            std::cout << "Kalman, intermediate: \n"
+                << "Innovation covariance: " << innovation_covariance << "\n"
+                << "Innovation: " << innovation << "\n"
+                << "Kalman gain: " << kalman_gain
+                << std::endl; 
+        }
     }
 
     void report(){
         std::cout << "Kalman:\n"
             << "Position estimate: " << _position_estimate << "\n"
-            << "Uncertainty: " << _uncertainty << std::endl;
+            << "Uncertainty: " << _uncertainty 
+            << std::endl;
     }
 
 private:
