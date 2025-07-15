@@ -2,22 +2,22 @@
 
 class KalmanFilter{
 public:
-    KalmanFilter(float position_estimate, float uncertainty, float process_noise, 
-            float measurement_noise, bool verbose):
+    KalmanFilter(float position_estimate, float uncertainty, float process_variance, 
+            float measurement_variance, bool verbose):
         _position_estimate(position_estimate),
         _uncertainty(uncertainty),
-        _process_noise(process_noise),
-        _measurement_noise(measurement_noise),
+        _process_variance(process_variance),
+        _measurement_variance(measurement_variance),
         _verbose(verbose)
         {}
 
     void update(float measurement){
         // Predict
-        _uncertainty = _uncertainty + _process_noise;
+        _uncertainty = _uncertainty + _process_variance;
 
         // Innovation covariance S_k = P_{k|k-1} + R
         // how “big” we expect those residuals to be, on average
-        const float innovation_covariance = _uncertainty + _measurement_noise;
+        const float innovation_covariance = _uncertainty + _measurement_variance;
 
         // Innovation (measurement residual)
         const float innovation = measurement - _position_estimate;
@@ -46,7 +46,7 @@ public:
 private:
     float _position_estimate;
     float _uncertainty;
-    float _process_noise;
-    float _measurement_noise;
+    float _process_variance;
+    float _measurement_variance;
     bool _verbose;
 };

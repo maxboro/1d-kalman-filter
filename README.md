@@ -18,8 +18,8 @@ make clean     # Cleans up build files
 In `main.cpp` you can modify simulation parameters.
 - position_estimate (default 0) - What we believe about position now
 - uncertainty (default 1) - How uncertain we are about that belief
-- process_noise (default 0.01) - "Model error" – how much we think the position could change unpredictably between steps
-- measurement_noise (default 0.5) - How noisy we believe our sensor is
+- process_variance (default 0.01) - "Model error" – how much we think the position could change unpredictably between steps
+- measurement_variance (default 0.5) - How noisy we believe our sensor is
 - true_position (default 5) - True position
 - n_measurements (default 20) - Number of measurements
 - verbose (default true) - Flag to show intermediate calculations
