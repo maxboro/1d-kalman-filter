@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "./include/random.cpp"
 #include "./include/kalman.cpp"
 
