@@ -28,183 +28,184 @@ In `main.cpp` you can modify simulation parameters.
 # Example
 Terminal:
 ```terminal
-Measurement #0: 5.76442
+
+Measurement #0: 5.41973
 Kalman, intermediate:
 Innovation covariance: 1.51
-Innovation: 5.76442
+Innovation: 5.41973
 Kalman gain: 0.668874
 Kalman:
-Position estimate: 3.85567
-estimate_covariance: 0.334437
+Position estimate: 3.62512
+Estimate covariance: 0.334437
 
-Measurement #1: 6.09022
+Measurement #1: 4.38854
 Kalman, intermediate:
 Innovation covariance: 0.844437
-Innovation: 2.23455
+Innovation: 0.763426
 Kalman gain: 0.40789
 Kalman:
-Position estimate: 4.76712
-estimate_covariance: 0.203945
+Position estimate: 3.93651
+Estimate covariance: 0.203945
 
-Measurement #2: 5.16515
+Measurement #2: 5.25779
 Kalman, intermediate:
 Innovation covariance: 0.713945
-Innovation: 0.39803
+Innovation: 1.32128
 Kalman gain: 0.299666
 Kalman:
-Position estimate: 4.8864
-estimate_covariance: 0.149833
+Position estimate: 4.33245
+Estimate covariance: 0.149833
 
-Measurement #3: 5.31474
+Measurement #3: 5.98914
 Kalman, intermediate:
 Innovation covariance: 0.659833
-Innovation: 0.42834
+Innovation: 1.65669
 Kalman gain: 0.242232
 Kalman:
-Position estimate: 4.99015
-estimate_covariance: 0.121116
+Position estimate: 4.73376
+Estimate covariance: 0.121116
 
-Measurement #4: 4.44333
+Measurement #4: 4.01315
 Kalman, intermediate:
 Innovation covariance: 0.631116
-Innovation: -0.546823
+Innovation: -0.720611
 Kalman gain: 0.207753
 Kalman:
-Position estimate: 4.87655
-estimate_covariance: 0.103876
+Position estimate: 4.58405
+Estimate covariance: 0.103876
 
-Measurement #5: 5.04061
+Measurement #5: 4.55635
 Kalman, intermediate:
 Innovation covariance: 0.613876
-Innovation: 0.164057
+Innovation: -0.0277004
 Kalman gain: 0.185504
 Kalman:
-Position estimate: 4.90698
-estimate_covariance: 0.0927519
+Position estimate: 4.57891
+Estimate covariance: 0.0927519
 
-Measurement #6: 5.66026
+Measurement #6: 4.27425
 Kalman, intermediate:
 Innovation covariance: 0.602752
-Innovation: 0.753279
+Innovation: -0.304664
 Kalman gain: 0.170471
 Kalman:
-Position estimate: 5.0354
-estimate_covariance: 0.0852356
+Position estimate: 4.52697
+Estimate covariance: 0.0852356
 
-Measurement #7: 5.34006
+Measurement #7: 5.78704
 Kalman, intermediate:
 Innovation covariance: 0.595236
-Innovation: 0.304668
+Innovation: 1.26006
 Kalman gain: 0.159997
 Kalman:
-Position estimate: 5.08414
-estimate_covariance: 0.0799983
+Position estimate: 4.72858
+Estimate covariance: 0.0799983
 
-Measurement #8: 4.71266
+Measurement #8: 4.61193
 Kalman, intermediate:
 Innovation covariance: 0.589998
-Innovation: -0.371481
+Innovation: -0.116652
 Kalman gain: 0.15254
 Kalman:
-Position estimate: 5.02748
-estimate_covariance: 0.0762699
+Position estimate: 4.71078
+Estimate covariance: 0.0762699
 
-Measurement #9: 5.16255
+Measurement #9: 6.08642
 Kalman, intermediate:
 Innovation covariance: 0.58627
-Innovation: 0.135071
+Innovation: 1.37563
 Kalman gain: 0.147151
 Kalman:
-Position estimate: 5.04735
-estimate_covariance: 0.0735753
+Position estimate: 4.91321
+Estimate covariance: 0.0735753
 
-Measurement #10: 5.43181
+Measurement #10: 6.2746
 Kalman, intermediate:
 Innovation covariance: 0.583575
-Innovation: 0.384462
+Innovation: 1.36139
 Kalman gain: 0.143213
 Kalman:
-Position estimate: 5.10241
-estimate_covariance: 0.0716063
+Position estimate: 5.10818
+Estimate covariance: 0.0716063
 
-Measurement #11: 5.14567
+Measurement #11: 5.23476
 Kalman, intermediate:
 Innovation covariance: 0.581606
-Innovation: 0.0432611
+Innovation: 0.126582
 Kalman gain: 0.140312
 Kalman:
-Position estimate: 5.10848
-estimate_covariance: 0.0701559
+Position estimate: 5.12594
+Estimate covariance: 0.0701559
 
-Measurement #12: 6.18494
+Measurement #12: 4.21051
 Kalman, intermediate:
 Innovation covariance: 0.580156
-Innovation: 1.07645
+Innovation: -0.91543
 Kalman gain: 0.138163
 Kalman:
-Position estimate: 5.25721
-estimate_covariance: 0.0690814
+Position estimate: 4.99946
+Estimate covariance: 0.0690814
 
-Measurement #13: 5.71209
+Measurement #13: 4.10904
 Kalman, intermediate:
 Innovation covariance: 0.579081
-Innovation: 0.454886
+Innovation: -0.890419
 Kalman gain: 0.136563
 Kalman:
-Position estimate: 5.31933
-estimate_covariance: 0.0682817
+Position estimate: 4.87786
+Estimate covariance: 0.0682817
 
-Measurement #14: 4.55147
+Measurement #14: 5.34344
 Kalman, intermediate:
 Innovation covariance: 0.578282
-Innovation: -0.767855
+Innovation: 0.465581
 Kalman gain: 0.13537
 Kalman:
-Position estimate: 5.21538
-estimate_covariance: 0.0676848
+Position estimate: 4.94089
+Estimate covariance: 0.0676848
 
-Measurement #15: 4.94335
+Measurement #15: 6.44991
 Kalman, intermediate:
 Innovation covariance: 0.577685
-Innovation: -0.272032
+Innovation: 1.50902
 Kalman gain: 0.134476
 Kalman:
-Position estimate: 5.1788
-estimate_covariance: 0.067238
+Position estimate: 5.14382
+Estimate covariance: 0.067238
 
-Measurement #16: 5.68595
+Measurement #16: 5.61334
 Kalman, intermediate:
 Innovation covariance: 0.577238
-Innovation: 0.507152
+Innovation: 0.469529
 Kalman gain: 0.133806
 Kalman:
-Position estimate: 5.24666
-estimate_covariance: 0.0669031
+Position estimate: 5.20664
+Estimate covariance: 0.0669031
 
-Measurement #17: 5.07317
+Measurement #17: 4.98199
 Kalman, intermediate:
 Innovation covariance: 0.576903
-Innovation: -0.173487
+Innovation: -0.224648
 Kalman gain: 0.133303
 Kalman:
-Position estimate: 5.22354
-estimate_covariance: 0.0666517
+Position estimate: 5.17669
+Estimate covariance: 0.0666517
 
-Measurement #18: 3.95586
+Measurement #18: 4.34841
 Kalman, intermediate:
 Innovation covariance: 0.576652
-Innovation: -1.26768
+Innovation: -0.828285
 Kalman gain: 0.132925
 Kalman:
-Position estimate: 5.05503
-estimate_covariance: 0.0664627
+Position estimate: 5.06659
+Estimate covariance: 0.0664627
 
-Measurement #19: 4.66216
+Measurement #19: 4.57596
 Kalman, intermediate:
 Innovation covariance: 0.576463
-Innovation: -0.392871
+Innovation: -0.490639
 Kalman gain: 0.132641
 Kalman:
-Position estimate: 5.00292
-estimate_covariance: 0.0663206
+Position estimate: 5.00152
+Estimate covariance: 0.0663206
 ```
